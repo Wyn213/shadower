@@ -187,7 +187,8 @@
     window.location.href=window.location.origin;
   }
   function paperio(){
-    window.location.href=window.location.origin+"/games/gfiles/paperio.html";
+      const url = search(location.href+"/gfiles/paperio.html", searchEngine.value);
+      document.getElementById("frame").src = __uv$config.prefix + __uv$config.encodeUrl(url);
   }
   function rooftopsnipers(){
     window.location.href=window.location.origin+"/games/gfiles/rooftopsnipers.html";
@@ -313,3 +314,5 @@
     window.location.href=window.location.origin+"/games/gfiles/rls.html";
   }
 </script>
+
+
